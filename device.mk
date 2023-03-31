@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/miuicamera.mk)
+
 # A/B
 TARGET_IS_VAB := true
 
@@ -21,9 +25,6 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-
-# Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/miuicamera.mk)
 
 # Camera
 PRODUCT_PACKAGES += \

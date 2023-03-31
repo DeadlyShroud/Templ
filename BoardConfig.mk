@@ -23,6 +23,9 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_CONFIG := munch_defconfig
 
+# Miui Camera
+TARGET_INCLUDES_MIUI_CAMERA := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_munch
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_munch
