@@ -10,14 +10,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_UNOFFICIAL_BUILD_ID := crd_unofficial
+
+TARGET_DISABLE_EPPE := true
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := PrateekGurjar
+MATRIXX_CHIPSET := SM8250
+MATRIXX_BATTERY := 4500mah
+MATRIXX_DISPLAY := 1080x2400
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDES_AUXIO := true
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
