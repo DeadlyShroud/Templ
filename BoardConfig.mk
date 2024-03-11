@@ -21,7 +21,7 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := munch_defconfig
+TARGET_KERNEL_CONFIG := vendor/munch_defconfig
 
 # Miui Camera
 TARGET_INCLUDES_MIUI_CAMERA := true
